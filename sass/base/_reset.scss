@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        //widht < 1200?
+        font-size: 56.25%; //1rem = 9px/16px = 56.25%
+    }
+
+    @include respond(tab-port) {
+        //widht < 900?
+        font-size: 50%; //1rem = 8px/16px = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px, 12/16
+    }
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: "Public Sans", sans-serif;
+    @include respond(tab-port) {
+        margin-top: 8.5rem;
+    }
+}
+
+.attribution {
+    background-color: var(--dark-blue);
+}

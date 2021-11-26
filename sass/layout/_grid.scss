@@ -1,0 +1,33 @@
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3.8rem;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 3.8rem;
+}
+
+.col-2 {
+    display: flex;
+    gap: 4rem;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    @include respond(phone) {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3.8rem;
+
+    @include respond(phone) {
+        gap: 1rem;
+    } */
+}

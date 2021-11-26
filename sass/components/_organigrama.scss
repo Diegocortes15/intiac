@@ -1,0 +1,7 @@
+.organigrama {
+    display: grid;
+    place-items: center;
+    &_img {
+        max-width: 100%;
+    }
+}

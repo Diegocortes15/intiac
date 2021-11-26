@@ -1,0 +1,35 @@
+@keyframes mockupsAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-83%, -100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-83%, -50%);
+    }
+}
+
+@keyframes mockupsAnimation--phone {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes header__textboxAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

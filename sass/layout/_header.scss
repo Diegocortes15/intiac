@@ -1,0 +1,109 @@
+.header {
+    height: calc(100vh - 8.7rem);
+    background-color: var(--very-light-gray);
+    position: relative;
+    overflow-x: clip;
+
+    @include respond(phone) {
+        position: static;
+        height: 100%;
+        // margin-top: -12.25rem;
+        margin-top: -8.5rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        @include respond(phone) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+            order: 1;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &__text-box {
+        width: 32vw;
+        display: flex;
+        position: relative;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 3rem;
+        background-color: var(--very-light-gray);
+        -webkit-animation: header__textboxAnimation 1s ease 0.5s forwards;
+        animation: header__textboxAnimation 1s ease 0.5s forwards;
+        opacity: 0;
+        // animation-delay: 0.5s;
+        @include respond(phone) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 8rem);
+            padding: 4rem 4rem;
+            text-align: center;
+            gap: 4rem;
+            order: 2;
+        }
+    }
+
+    &-img {
+        width: 68vw;
+        @include respond(phone) {
+            min-width: 100%;
+            height: 50%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 500;
+            width: 100%;
+            height: 100%;
+            background: url(../images/bg-intro-desktop.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            @include respond(tab-land) {
+                transform: scale(1) translate(7%);
+            }
+            @include respond(phone) {
+                background: url(../images/bg-intro-mobile.svg);
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-size: contain;
+                transform: unset;
+            }
+        }
+
+        &__image-mockups {
+            width: 98rem;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            object-fit: contain;
+            z-index: 1000;
+            pointer-events: none;
+            animation: mockupsAnimation 1s ease;
+            transform: translate(-83%, -50%);
+
+            @include respond(tab-land) {
+                width: 75%;
+            }
+            @include respond(phone) {
+                position: relative;
+                top: 0;
+                left: 50%;
+                max-width: 100%;
+                animation: mockupsAnimation--phone 1s ease;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}

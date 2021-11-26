@@ -1,0 +1,9 @@
+.sections-layout {
+    padding: 5rem 0;
+    display: grid;
+    row-gap: 10rem;
+
+    @include respond(desktop) {
+        row-gap: 7rem;
+    }
+}

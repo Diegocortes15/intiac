@@ -1,0 +1,24 @@
+{
+    "name": "easybank-landing-page-master",
+    "version": "1.0.0",
+    "description": "Easybank landing page",
+    "main": "index.js",
+    "dependencies": {
+        "autoprefixer": "^10.3.3",
+        "node-sass": "^6.0.1",
+        "postcss": "^8.3.6",
+        "postcss-cli": "^8.3.1"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    },
+    "scripts": {
+        "watch:sass": "node-sass sass/main.scss css/style.css -w",
+        "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css  -o css/style.prefix.css",
+        "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+        "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    },
+    "author": "Diego Alejandro Cortes Roa",
+    "license": "ISC"
+}

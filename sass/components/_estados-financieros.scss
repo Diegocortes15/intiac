@@ -1,0 +1,25 @@
+.estados-financieros {
+    border-top: 0.2rem solid var(--dark-blue);
+    border-bottom: 0.2rem solid var(--dark-blue);
+}
+
+.estado-financiero {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: auto;
+
+    @include respond(phone) {
+        & .paragraph {
+            margin-bottom: 1rem;
+        }
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 0.2rem solid var(--dark-blue);
+    }
+}

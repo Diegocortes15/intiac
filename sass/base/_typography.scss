@@ -1,0 +1,51 @@
+h1 {
+    display: none;
+}
+
+.heading-secondary {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: var(--regular);
+    color: var(--dark-blue);
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+.heading-tertiary {
+    font-size: 4rem;
+    font-weight: var(--regular);
+    color: var(--dark-blue);
+    width: 100%;
+}
+
+.heading-quaternary {
+    font-size: 2.7rem;
+    font-weight: var(--regular);
+    color: var(--dark-blue);
+}
+
+.heading-quinary {
+    font-size: 2.4rem;
+    font-weight: var(--regular);
+    color: var(--dark-blue);
+}
+
+.paragraph {
+    color: var(--grayish-glue);
+    line-height: 1.5;
+    font-weight: var(--light);
+    font-size: 1.8rem;
+
+    &--2 {
+        color: var(--grayish-glue);
+        line-height: 1.5;
+        font-weight: var(--light);
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+}
+
+.paragraph--bold {
+    font-weight: 700;
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Easybank is a challenge from Frontend Mentor, this web site was created with HTML, SCSS and JavaScript for a portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="./images/tab-icon.jpg">
+
+    <script defer src="script.js"></script>
+    <title>Estudio de factibilidad</title>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="bar__content container">
+            <a href="index.html" class="bar__logo-box">
+                <img loading="lazy" class="bar__logo" src="images/logo-intiac.png" alt="logo">
+            </a>
+            <nav class="bar-navigation">
+                <ul class="bar-navigation__list">
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="humanTalent.html">Talento humano</a>
+                    </li>
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="portfolio.html">Portafolio</a>
+                    </li>
+                    <li class="bar-navigation__item">
+                        <a class="bar-navigation__link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="bar-navigation__button btn btn--primary btn--friendly" href="contact.html">
+                Contrátanos
+            </a>
+            <input type="checkbox" class="bar-navigation__checkbox display-hidden" id="nav-mobile-toggle">
+            <label class="bar-navigation__toggle-button" for="nav-mobile-toggle">
+                <svg class="bar-navigation-mobile__burguer" xmlns="http://www.w3.org/2000/svg" width="24" height="11">
+                    <g fill="#2D314D" fill-rule="evenodd">
+                        <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <nav class="navigation--mobile hidden">
+        <ul class="navigation--mobile__list">
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="index.html">Inicio</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="about.html">Nosotros</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="humanTalent.html">Talento humano</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="services.html">Servicios</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="marketStudy.html">Estudio de mercado</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="feasibilityStudy.html">Estudio de factibilidad</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation--mobile__item">
+                <a class="navigation--mobile__link" href="contact.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Estudio de Factibilidad</h1>
+
+        <div class="container--document">
+
+            <div class="sections-layout">
+                <h2 class="heading-secondary">Estudio de Factibilidad</h2>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Resumen ejecutivo</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        En la revisión de documentos donde se da toda la información importante del desarrollo
+                        del proyecto, es fundamental tener una versión más simple que de claridad sobre los
+                        aspectos más relevantes del mismo.
+                    </p>
+                    <p class="paragraph">
+                        Para atender mejor a nuestros clientes actuales y para expandirnos a nuevos
+                        mercados, necesitamos desarrollar e identificar los factores pre y pos proyectos
+                        que den mayor impacto a los productos y servicios que ofrecemos. Por lo que
+                        luego de identificar los factores que dieron origen a la necesidad del proyecto se
+                        determinaron los demás factores que impulsaron la investigación de factibilidad del
+                        mismo. Esto dio en la identificación factibilidad técnica, legal, económica, de
+                        recursos, de factibilidad operacional, temporal, etc. Con ello pudimos reconocer
+                        las posibles amenazas que podrían incurrir en riesgos del proyecto, entre ellos
+                        identificamos servicios de competidores más económicos, el no ser demasiado visibles,
+                        la falta presupuesto para el marketing, falta de confianza de los clientes, esto último en
+                        referencia al estudio de marketing. Con respecto a los demás estudios de factibilidad no
+                        encontramos mayores amenazas más que el hecho de tener los recursos necesarios para
+                        emprender la proyecto/empresa en un inicio, ya que ni él lo legal, ni en lo organizacional,
+                        ni el lo técnico encontramos dificultades mayores.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Antecedentes del proyecto</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        En esta sección se presenta una introducción de la visión del proyecto y sus
+                        orígenes:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <h4 class="heading-quaternary u-margin-bottom--small">Factores que dieron origen a la
+                                necesidad y al proyecto</h4>
+                            <p class="paragraph u-margin-bottom--small">
+                                El proyecto nació de algunas iniciativas planteadas en metodologías
+                                empresariales surgidas a través de proyectos de asignaturas vistas en la
+                                carrera ingeniería multimedia, donde pudimos evidenciar y de antemano
+                                conocer lo necesario para realizar este tipo de proyecto.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4 class="heading-quaternary u-margin-bottom--small">Factores impulsores de la
+                                investigación de factibilidad</h4>
+                            <p class="paragraph u-margin-bottom--small">
+                                Para determinar los principales factores para determinar la factibilidad de
+                                nuestro proyecto nos basamos en algunos dados por en la categoría de
+                                soluciones de software integradas CRM(Customer relationship
+                                management o gestión de relaciones con el cliente).
+                            </p>
+                            <ol class="u-margin-bottom--small">
+                                <li class="paragraph">Determinar las funciones que se desean automatizar</li>
+                                <li class="paragraph">Automatizar sólo lo que necesita ser automatizado</li>
+                                <li class="paragraph">Obtener el soporte y compromiso de los altos niveles de la
+                                    compañía</li>
+                                <li class="paragraph">Emplear inteligentemente la tecnología</li>
+                                <li class="paragraph">Involucrar a los usuarios en la construcción del sistema</li>
+                                <li class="paragraph">Realizar un prototipo del sistema</li>
+                                <li class="paragraph">Capacitar a los usuarios</li>
+                                <li class="paragraph">Motivar al personal que lo utilizará</li>
+                                <li class="paragraph">Administrar el sistema desde dentro</li>
+                                <li class="paragraph">Mantener un comité administrativo del sistema para dudas o
+                                    sugerencias.</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            <h4 class="heading-quaternary u-margin-bottom--small">Quién inició el proyecto (Persona u
+                                organización)</h4>
+                            <p class="paragraph u-margin-bottom--small">
+                                El proyecto inicialmente fue planteado por los estudiantes de ingeniería
+                                próximos a graduarse Diego Cortez Roa y Jonathan Garavito Chaparro
+                                como CEO (Consejero Delegado) y COO (Director General),
+                                posteriormente se unió Cristian Beltran Velosa como CFO(Director
+                                Financiero).
+                            </p>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">El proyecto y su contexto</h3>
+                    <h4 class="heading-quaternary u-margin-bottom--small">Descripción del proyecto</h4>
+                    <p class="paragraph u-margin-bottom--small">
+                        Intiac crea productos accesibles para ser disfrutados con perspectiva innovadora y
+                        creativa, aplicaciones que conecten a las empresas con las personas buscando nuevas
+                        formas de ofrecer sus productos. Siendo estos principalmente soluciones en el ámbito
+                        digital orientadas a aplicaciones Web y aplicaciones 3D.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Alcance del estudio de factibilidad</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        En este estudio de factibilidad se espera obtener de los detalles que pueden
+                        impactar positiva o negativamente el proyecto. Dando especial énfasis a factores
+                        que pudieran poner en riesgo la implementación del proyecto.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Dentro de los resultados también se espera tener de manera clara y concisa la
+                        factibilidad de la empresa.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad técnica</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        El estudio técnico que realizado en base a diálogos con el equipo del proyecto
+                        estimó que sería aconsejable la compra de recursos de servidores de alojamiento
+                        Web COLHOST4, servicios de AWS, software de modelado como Maya, y
+                        plataformas de desarrollo de entornos virtuales como Unity.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Lo favorable de la mayoría de estas plataformas es que poseen versiones para
+                        pequeñas startups y de aprendizaje que nos permitirá capacitar al personal de la
+                        empresa en estas herramientas sin elevados costos.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Se estiman gastos de capacitación y entrenamiento de $1,300,000.oo.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Maya Autodesk = $6’413.222.oo anual
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Unity = $1’505.221.oo anual
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Aws = $0.oo
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        COLHOST4 = $525.000.oo anual
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad económica</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        El propósito del estudio de viabilidad económica, es determinar los beneficios
+                        económicos del proyecto o sistema propuesto para la organización, en
+                        contraposición con los costos.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        La premisa de los costos se basan en las estimaciones hechas por el equipo en
+                        base a tarifas en la cotización del desarrollo de productos y servicios digitales,
+                        asesorías. El siguiente cuadro resume el flujo de caja proyectado para los
+                        primeros tres años de operación.
+                    </p>
+                    <img src="images/factibilidad-economica.JPG" alt="factibilidad economica" class="u-img">
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad legal</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        A nivel legal es importante tomar en cuenta lo siguiente, de acuerdo a lo señalado
+                        por MinCiencias, al otorgar beneficios tributarios a empresas que ejecuten
+                        proyectos de base de ciencia, tecnología e innovación, en alianza con un actor
+                        reconocido por el Ministerio de Ciencia, Tecnología e Innovación, estos beneficios
+                        constan de deducción de y descuento tributario por inversiones, crédito Fiscal por
+                        inversiones, ingresos No Constitutivos de renta y/o Ganancia Ocasional y beneficios Tributarios
+                        en proyectos de ciencia, tecnología e innovación.
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Por otro lado el ministerio de hacienda y crédito público en el artículo 1 del decreto
+                        260 de 2001 estipula que “debe aplicar la tarifa de retención en la fuente del 3,5%
+                        a los pagos o abonos en cuenta realizados por los siguientes conceptos:
+                    </p>
+                    <ol>
+                        <li class="paragraph">Realización de actividades relacionadas con el análisis, diseño,
+                            desarrollo,
+                            implementación, mantenimiento, ajustes, pruebas, suministro y
+                            documentación, consideradas como fases necesarias en la elaboración de
+                            programas informáticos.</li>
+                        <li class="paragraph">Diseño de páginas web.</li>
+                        <li class="paragraph">Consultoría en programas de informática.</li>
+                        <li class="paragraph">Servicios de licenciamiento y derecho de uso del software.”</li>
+                    </ol>
+                    <p class="paragraph u-margin-bottom--small">
+                        Esta tarifa aplicará sobre el total (100%) del valor pagado o abonado.
+                    </p>
+
+                    <h4 class="heading-quaternary u-margin-bottom--small">Estados financieros</h4>
+                    <section class="estados-financieros section">
+                        <div class="estado-financiero">
+                            <p class="paragraph">Balance General</p>
+                            <a href="https://docs.google.com/spreadsheets/d/1Ear9Wd-lDYytiDEoAjm2PtmqKdNFsb0z/edit#gid=1336331288"
+                                target="_blank" class="btn btn--secondary estado-financiero__link">Ver más
+                                &#8594;</a>
+                        </div>
+                        <div class="estado-financiero">
+                            <p class="paragraph">Estado de Resultados</p>
+                            <a href="https://docs.google.com/spreadsheets/d/1OiMsXhZUXZ5uT20kytUBHtUwoRXmc_iz/edit#gid=588189880"
+                                target="_blank" class="btn btn--secondary estado-financiero__link">Ver más
+                                &#8594;</a>
+                        </div>
+                    </section>
+
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad de recursos</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        Los recursos necesarios para la ejecución del proyecto son corresponden a
+                        infraestructura, personal y dependencias internas y externas, todos estos factores
+                        al pueden resultar en incremento de los costos para la organización y cambios en
+                        sus procesos, por los cuales deben considerarse.
+                    </p>
+                    <h4 class="heading-quaternary u-margin-bottom--small">Descripción del proyecto</h4>
+                    <ul>
+                        <li class="paragraph">1 Director de tecnología de sistemas</li>
+                        <li class="paragraph">1 Director de Comunicación</li>
+                        <li class="paragraph">3 Developers</li>
+                    </ul>
+                    <p class="paragraph u-margin-bottom--small">
+                        Los gastos fijos en salarios se estiman en $80’000.000 anuales, incluyendo las
+                        cargas sociales.
+                    </p>
+                    <h4 class="heading-quaternary u-margin-bottom--small">Descripción del proyecto</h4>
+                    <p class="paragraph u-margin-bottom--small">
+                        Servidores web (COLHOST4 - $525,000)
+                    </p>
+                    <p class="paragraph u-margin-bottom--small">
+                        Servicios aws gratuitos ($ 0)
+                    </p>
+                </section>
+
+                <section>
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad de mercado</h3>
+                    <ol>
+                        <li class="section">
+                            <h4 class="heading-quaternary u-margin-bottom--small">Descripción del proyecto</h4>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Edad:</span> 25-50 años
+                            </p>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Sexo:</span> Masculino / Femenino
+                            </p>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Estado civil:</span> No aplica
+                            </p>
+                            <p class="paragraph u-margin-bottom--small">
+                                <span class="paragraph--bold">Nacionalidad:</span> Colombiano / Extranjero
+                            </p>
+                            <p class="paragraph u-margin-bottom--small">
+                                <span class="paragraph--bold">Socioeconómico:</span> Colombiano / Extranjero
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">Socioeconómico</h5>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Clase social:</span> Media / Alta
+                            </p>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Nivel de estudios:</span> Bachiller o superior
+                            </p>
+                            <p class="paragraph u-margin-bottom--small">
+                                <span class="paragraph--bold">Poder adquisitivo:</span> Estrato 2+
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">Geográfico</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Sur América
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">Psicográfico</h5>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Hábitos:</span> Uso tecnológico constante
+                            </p>
+                            <p class="paragraph">
+                                <span class="paragraph--bold">Estilos de vida:</span> Sedentarismo
+                            </p>
+                            <p class="paragraph u-margin-bottom--small">
+                                <span class="paragraph--bold">Opiniones:</span> Uso de tecnología de forma informativa,
+                                recreativa y laboral
+                            </p>
+                        </li>
+
+                        <li class="section">
+                            <h4 class="heading-quaternary u-margin-bottom--small">Analisis de competencia</h4>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Quién ofrece productos comparables?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Desarrollo web y de aplicaciones móviles al gusto del cliente.
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué hacen bien tus competidores?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Ofrecer servicios de desarrollo web de alta calidad acorde a como se conocen los
+                                parámetros establecidos.
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Cuántos competidores hay?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Actualmente se encuentran muchos competidores en el mercado, con desarrollo
+                                en especial freelancer.
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué puedes hacer mejor que la
+                                competencia?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Ofrecer una nueva generación de experiencias, destacándose por su autenticidad,
+                                elaboración, además de ofrecer un buen SEO técnico en sitios web.
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿En qué se asemeja tu mercado objetivo al
+                                de tus competidores?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                En el desarrollo web y creación de aplicaciones
+                            </p>
+                        </li>
+
+                        <li class="section">
+                            <h4 class="heading-quaternary u-margin-bottom--small">Cliente objetivo</h4>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Con quién vamos a empatizar?</h5>
+                            <p class="paragraph u-margin-bottom--small">
+                                Emprendedores y amantes de la tecnología con oportunidades en la incursión
+                                digital
+                            </p>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué necesitan hacer?</h5>
+                            <ul>
+                                <li class="paragraph">Emprender</li>
+                                <li class="paragraph">Trabajar</li>
+                                <li class="paragraph">Hacer crecer su negocio</li>
+                                <li class="paragraph">Viajar</li>
+                                <li class="paragraph">Descansar</li>
+                                <li class="paragraph">Cuidar de su familia</li>
+                                <li class="paragraph">Pagar impuestos</li>
+                                <li class="paragraph">Pagar servicios básicos</li>
+                                <li class="paragraph">Planear su futuro</li>
+                                <li class="paragraph u-margin-bottom--small">Cuidar de su salud</li>
+                            </ul>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué VEN?</h5>
+                            <ul>
+                                <li class="paragraph"> <span class="paragraph--bold">Televisión:</span> noticias,
+                                    novelas, publicidad, deportes, películas, canales
+                                    nacionales</li>
+                                <li class="paragraph"> <span class="paragraph--bold">Internet:</span> videos, películas,
+                                    redes sociales</li>
+                                <li class="paragraph u-margin-bottom--small"> Oportunidades en el mercado</li>
+                            </ul>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué DICEN?</h5>
+                            <ul>
+                                <li class="paragraph">El servicio es muy caro</li>
+                                <li class="paragraph">¿Qué garantías se tienen del producto o servicio?</li>
+                                <li class="paragraph u-margin-bottom--small">No es tan importante el emprendimiento
+                                    digital</li>
+                            </ul>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué HACEN?</h5>
+                            <ul>
+                                <li class="paragraph">Trabajar</li>
+                                <li class="paragraph">Usar smartphones</li>
+                                <li class="paragraph">Usar computador de mesa</li>
+                                <li class="paragraph">Usar computador portátil</li>
+                                <li class="paragraph">Comentar en redes sociales</li>
+                                <li class="paragraph">Hacer compras por internet</li>
+                                <li class="paragraph">Buscar productos en internet para su compra</li>
+                                <li class="paragraph">Buscar en internet soluciones a problemas cotidianos</li>
+                                <li class="paragraph">Usan su smartphone como alarmas</li>
+                                <li class="paragraph u-margin-bottom--small">Búsquedas en google</li>
+                            </ul>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué OYEN?</h5>
+                            <ul>
+                                <li class="paragraph">Farandula</li>
+                                <li class="paragraph">Radio</li>
+                                <li class="paragraph">Recomendaciones de lugares por parte de amigos o familia</li>
+                                <li class="paragraph">Posicionar empresas en el mercado digital</li>
+                                <li class="paragraph u-margin-bottom--small">Uso de tecnologías para crear nuevos
+                                    productos y servicios</li>
+                            </ul>
+
+                            <h5 class="heading-quinary u-margin-bottom--small">¿Qué PIENSAN y SIENTEN?</h5>
+                            <p class="paragraph paragraph--bold u-margin-bottom--small">Esfuerzos</p>
+                            <ul>
+                                <li class="paragraph">Perder su trabajo</li>
+                                <li class="paragraph">Perder su familia</li>
+                                <li class="paragraph">Entrar en quiebra</li>
+                                <li class="paragraph">No saber qué hacer</li>
+                                <li class="paragraph">Dar una mala impresión</li>
+                                <li class="paragraph">Estar desinformado</li>
+                                <li class="paragraph">No conseguir logros</li>
+                                <li class="paragraph u-margin-bottom--small">Tener enfermedades</li>
+                            </ul>
+
+                            <p class="paragraph paragraph--bold u-margin-bottom--small">Resultados</p>
+                            <ul>
+                                <li class="paragraph">Ganar dinero</li>
+                                <li class="paragraph">No trabajar</li>
+                                <li class="paragraph">Ser felices</li>
+                                <li class="paragraph">Tranquilidad</li>
+                                <li class="paragraph">Sentirse seguros</li>
+                                <li class="paragraph">Sentirse amados</li>
+                                <li class="paragraph">Familia saludable</li>
+                                <li class="paragraph">Sentirse libre</li>
+                                <li class="paragraph">Tener estudios</li>
+                                <li class="paragraph u-margin-bottom--small">Tener casa propia</li>
+                            </ul>
+
+                            <p class="paragraph paragraph--bold u-margin-bottom--small">Pensamientos o sentimientos que
+                                motiven acciones</p>
+                            <ul>
+                                <li class="paragraph">Miedo</li>
+                                <li class="paragraph">Envidia</li>
+                                <li class="paragraph">Angustia</li>
+                                <li class="paragraph">Odio</li>
+                                <li class="paragraph">Presión</li>
+                                <li class="paragraph">Desesperación</li>
+                                <li class="paragraph">Tristeza</li>
+                                <li class="paragraph">Dolor</li>
+                                <li class="paragraph">Deseo</li>
+                                <li class="paragraph">Vergüenza</li>
+                                <li class="paragraph u-margin-bottom--small">Felicidad</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad operacional</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        Para el desarrollo de la factibilidad operacional se realiza previamente:
+                    </p>
+                    <ul>
+                        <li class="paragraph u-margin-bottom--small">Una planificación en la cual se reúnen el director
+                            general, el consejero
+                            delegado y el personal implicado.</li>
+                        <li class="paragraph u-margin-bottom--small">Se realiza un informe de plan operativo en el cual
+                            se plantea realizar
+                            estudios de tiempos, procesos y costes acerca del trabajo de campo,
+                            preparación del plan estratégico y la ejecución y control.</li>
+                        <li class="paragraph u-margin-bottom--small">Finalmente se realiza un informe para ser analizado
+                            junto con el director
+                            financiero a fin de poder verificar la viabilidad del proyecto a través de una
+                            dirección general un estudio de viabilidad y un visto bueno por medio del
+                            director general.</li>
+                    </ul>
+                    <p class="paragraph u-margin-bottom--small">
+                        Se evidencia en el siguiente diagrama el proceso que se acaba de
+                        mencionar:
+                    </p>
+                    <img src="images/factibilidad-operacional.JPG" alt="factibilidad operacional" class="u-img">
+                </section>
+
+                <section class="section">
+                    <h3 class="heading-tertiary u-margin-bottom--small">Factibilidad de tiempo</h3>
+                    <p class="paragraph u-margin-bottom--small">
+                        Para el desarrollo de la factibilidad de tiempo se debe tener en cuenta a la
+                        factibilidad operacional a fin de estar acorde con los límites planteados en cuanto
+                        a manejo de tiempo del proyecto.
+                    </p>
+                    <ul>
+                        <li class="paragraph">Con el tiempo que se tiene disponible para construir un sistema proyecto
+                            se
+                            administra según lo generado en la planificación</li>
+                        <li class="paragraph">Para saber cuándo se va a desarrollar el proyecto se debe llegar a un
+                            acuerdo después de la verificación de este para comenzar el proyecto</li>
+                        <li class="paragraph">Se debe tener en cuenta que para las operaciones normales del proyecto
+                            se debe disponer con los Los desarrolladores percatándose del tiempo de
+                            trabajo</li>
+                        <li class="paragraph">Para el desarrollo de varios proyectos se debe tener en cuenta en la
+                            planificación sobre la realización de varios proyectos en simultáneo para
+                            entenderse de antemano el tiempo que se le dedicara para el desarrollo</li>
+                        <li class="paragraph u-margin-bottom--small">Los costos recuperados se deben medir según un
+                            análisis de Mercado del
+                            proyecto y de acuerdo a esos datos se estima un tiempo para la
+                            recuperación de los mismos</li>
+                    </ul>
+                    <p class="paragraph u-margin-bottom--small">
+                        Para los casos de desarrollo en los que se llegue a exceder el tiempo Límite se
+                        debe realizar una reunión a fin de resolver las dudas como el caso del exceso de
+                        tiempo para generar el proyecto, se debe realizar una reunión con los
+                        desarrolladores involucrados en el retraso, de la misma forma para los casos la
+                        recuperación de costos del proyecto se debe informar por medio de una reunión al
+                        cliente y al director sobre extender el plazo de tiempo o cerrar el proyecto, de
+                        acuerdo al estudio de mercado planteado se revalúa en caso de permitirse
+                        extender el tiempo en cuanto se debe permitirse esperar para cubrir los costos
+                        como un proyecto viable
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__logo-box">
+                <a href="index.html">
+                    <img loading="lazy" class="footer__logo" src="images/logo-intiac-dark.png" alt="logo">
+                </a>
+
+                <ul class="footer__icon-list">
+                    <li class="footer__icon-item">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                <path
+                                    d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__icon-item">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                                <path
+                                    d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__icon-item">
+                        <a href="https://co.pinterest.com/" target="_blank" class="footer__icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                <path
+                                    d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__icon-item">
+                        <a href="https://twitter.com/home" target="_blank" class="footer__icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+                                <path
+                                    d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__icon-item">
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                                <path
+                                    d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="index.html" class="footer__nav-link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="humanTalent.html" class="footer__nav-link">
+                            Talento humano
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="services.html" class="footer__nav-link">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="marketStudy.html" class="footer__nav-link">
+                            Estudio de mercado
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="feasibilityStudy.html" class="footer__nav-link">
+                            Estudio de factibilidad
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="portfolio.html" class="footer__nav-link">
+                            Portafolio
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="contact.html" class="footer__nav-link">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer__cta">
+                <a class="btn btn--primary btn--friendly" href="contact.html">
+                    Contrátanos
+                </a>
+
+                <p class="footer__copy">&copy; Intiac. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay hidden"></div>
+</body>
+
+</html>

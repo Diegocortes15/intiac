@@ -1,0 +1,118 @@
+.footer {
+    background-color: var(--dark-blue);
+
+    &__content {
+        display: grid;
+        grid-template-columns: 2fr 2fr 3fr;
+        padding: 5rem 0;
+        gap: 3rem;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+    }
+
+    &__logo-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center;
+        align-content: space-between;
+        @include respond(phone) {
+            gap: 4rem;
+        }
+    }
+
+    &__logo {
+        max-width: 100%;
+        max-height: 100%;
+        width: 13.9rem;
+    }
+
+    &__icon-list {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    &__icon-link:hover svg {
+        outline: none;
+        fill: var(--lime-green);
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    &__icon-link:active svg {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &__icon-link svg {
+        fill: var(--white);
+        transition: all 0.2s;
+    }
+
+    &__icon-item {
+        list-style: none;
+    }
+
+    &__nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__nav {
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    &__nav-item {
+        list-style: none;
+        display: inline-block;
+    }
+
+    &__nav-link {
+        color: var(--white);
+        text-decoration: none;
+        transition: all 0.2s;
+        display: inline-block;
+
+        @include respond(phone) {
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        &:hover {
+            color: var(--lime-green);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+            transform: rotate(5deg) scale(1.1);
+        }
+    }
+
+    &__cta {
+        justify-self: end;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+        justify-items: end;
+        width: 100%;
+        @include respond(phone) {
+            place-items: center;
+            gap: 3rem;
+        }
+    }
+
+    &__copy {
+        color: var(--grayish-glue);
+    }
+}

@@ -1,0 +1,75 @@
+.bar {
+    // background-color: var(--white);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    width: 100%;
+    transition: all 1s;
+    background-color: var(--white);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    @include respond(tab-port) {
+        position: fixed;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        @include respond(tab-port) {
+            width: calc(100% - 4rem);
+            height: 6.5rem;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__logo {
+        max-width: 100%;
+        max-height: 100%;
+        width: 13.9rem;
+    }
+
+    &-navigation {
+        @include respond(tab-port) {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        &__link {
+            color: var(--grayish-glue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            &:hover {
+                color: var(--dark-blue);
+            }
+        }
+        &__button {
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+        &__toggle-button {
+            display: none;
+            border: none;
+            // background-color: rgba(0, 0, 0, 0);
+            padding: 2rem;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 0.2rem 0.2rem 0.6rem #d9d9d9;
+            }
+
+            @include respond(tab-port) {
+                display: inline-block;
+            }
+        }
+    }
+}
